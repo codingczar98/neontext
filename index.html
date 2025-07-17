@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customize Neon Text</title>
+  <link rel="icon" type="image/x-icon" href="./asset/images.jfif">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="./app.js" defer></script>
+</head>
+
+<body>
+  <main class="container">
+    <section class="content">
+      <aside id="savedtext" aria-live="polite"></aside>
+
+      <section class="customise-neon">
+        <header>
+          <h1>Customize Neon</h1>
+          <p>
+            <span aria-label="5 star reviews">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span>319 reviews</span>
+          </p>
+        </header>
+
+        <form autocomplete="off" aria-label="Neon Text Customization">
+
+          <legend>Type Your Text</legend>
+          <textarea id="mytextarea" placeholder="TEXT PREVIEW" rows="2" aria-label="Text Preview"></textarea>
+
+
+          <hr>
+          <legend>Pick Your Font</legend>
+          <div class="font-btn-style" role="group" aria-label="Font selection">
+            <button type="button" id="font1" class="fonts">Antic</button>
+            <button type="button" id="font2" class="fonts">Roboto</button>
+            <button type="button" id="font3" class="fonts">Oswald</button>
+            <button type="button" id="font4" class="fonts">League</button>
+            <button type="button" id="font5" class="fonts">Caveat</button>
+            <button type="button" id="font6" class="fonts">Wallpoet</button>
+            <button type="button" id="font7" class="fonts">Apple</button>
+            <button type="button" id="font8" class="fonts">Modern</button>
+            <button type="button" id="font9" class="fonts">Sassy</button>
+            <button type="button" id="font10" class="fonts">Alfa</button>
+            <button type="button" id="font11" class="fonts">Cinzel</button>
+            <button type="button" id="font12" class="fonts">Bebas</button>
+            <button type="button" id="font13" class="fonts">Dots</button>
+            <button type="button" id="font14" class="fonts">Archi</button>
+            <button type="button" id="font15" class="fonts">Cabin</button>
+            <button type="button" id="font16" class="fonts">Lobster</button>
+            <button type="button" id="font17" class="fonts">Great</button>
+            <button type="button" id="font18" class="fonts">Abril</button>
+            <button type="button" id="font19" class="fonts">Bree</button>
+            <button type="button" id="font20" class="fonts">Pacifico</button>
+            <button type="button" id="font21" class="fonts">Slab</button>
+          </div>
+
+          <hr>
+
+
+          <legend>Select Your Colour</legend>
+          <div class="color-btn-style" role="group" aria-label="Color selection">
+            <button type="button" id="color1" class="colors" style="background-color:white;"
+              aria-label="White"></button>
+            <button type="button" id="color2" class="colors" style="background-color:pink;" aria-label="Pink"></button>
+            <button type="button" id="color3" class="colors" style="background-color:rgb(21, 189, 21);"
+              aria-label="Green"></button>
+            <button type="button" id="color4" class="colors" style="background-color:blue;" aria-label="Blue"></button>
+            <button type="button" id="color5" class="colors" style="background-color:purple;"
+              aria-label="Purple"></button>
+            <button type="button" id="color6" class="colors" style="background-color:orange;"
+              aria-label="Orange"></button>
+            <button type="button" id="color7" class="colors" style="background-color:lightblue;"
+              aria-label="Light Blue"></button>
+            <button type="button" id="color8" class="colors" style="background-color:gray;" aria-label="Gray"></button>
+            <button type="button" id="color9" class="colors" style="background-color:teal;" aria-label="Teal"></button>
+            <button type="button" id="color10" class="colors" style="background-color:crimson;"
+              aria-label="Crimson"></button>
+          </div>
+
+
+          <hr>
+
+
+          <legend>Pick Your Size</legend>
+          <div class="btns" role="group" aria-label="Size selection">
+            <button type="button" id="size1" class="size">Regular</button>
+            <button type="button" id="size2" class="size">Medium</button>
+            <button type="button" id="size3" class="size">Large</button>
+          </div>
+
+        </form>
+
+        <section class="generate-css">
+          <label for="css-box" class="label">Generated CSS Code</label>
+          <textarea id="css-box" readonly aria-label="Generated CSS"></textarea>
+          <button id="copyCssButton" aria-label="Copy CSS"><i class="fa-solid fa-copy"></i></button>
+          <button id="generateCode" type="button">Generate Code</button>
+        </section>
+      </section>
+    </section>
+  </main>
+</body>
+
+</html>
